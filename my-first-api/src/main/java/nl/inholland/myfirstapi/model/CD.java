@@ -1,23 +1,24 @@
 package nl.inholland.myfirstapi.model;
 
 import java.time.LocalTime;
+import java.time.Duration;
 
 public class CD extends Album {
 
-    private LocalTime playTime;
+    private Duration playTime;
 
-    public CD(long id, String title, String artist, double price, LocalTime playTime) {
+    public CD(long id, String title, String artist, double price, Duration playTime) {
         super(id, title, artist, price);
 
         this.playTime = playTime;
 
     }
 
-    public LocalTime getPlayTime() {
+    public Duration getPlayTime() {
         return playTime;
     }
 
-    public void setPlayTime(LocalTime playTime) {
+    public void setPlayTime(Duration playTime) {
         this.playTime = playTime;
     }
 
