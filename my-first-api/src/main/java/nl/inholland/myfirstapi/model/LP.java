@@ -4,7 +4,7 @@ public class LP extends Album {
 
     private int numberOfLPs;
 
-    public LP(long id, String title, String artist, double price, int numberOfLPs) {
+    public LP(long id, String title, String artist, int price, int numberOfLPs) {
         super(id, title, artist, price);
 
         this.numberOfLPs = numberOfLPs;

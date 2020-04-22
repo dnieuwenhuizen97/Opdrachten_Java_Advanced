@@ -1,5 +1,6 @@
 package nl.inholland.myfirstapi.model;
 
+import java.sql.SQLOutput;
 import java.time.LocalTime;
 import java.time.Duration;
 
@@ -7,7 +8,7 @@ public class CD extends Album {
 
     private Duration playTime;
 
-    public CD(long id, String title, String artist, double price, Duration playTime) {
+    public CD(long id, String title, String artist, int price, Duration playTime) {
         super(id, title, artist, price);
 
         this.playTime = playTime;

@@ -5,13 +5,13 @@ public abstract class Album {
     protected long id;
     protected String title;
     protected String artist;
-    protected double price;
+    protected int price;
 
     public Album() {
 
     }
 
-    public Album(long id, String title, String artist, double price) {
+    public Album(long id, String title, String artist, int price) {
         this.id = id;
         this.title = title;
         this.artist = artist;
@@ -42,11 +42,11 @@ public abstract class Album {
         this.artist = artist;
     }
 
-    public double getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 
